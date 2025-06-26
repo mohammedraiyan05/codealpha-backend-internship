@@ -32,7 +32,11 @@ Implemented filters, status updates, and notifications
 🛠️ Tech Stack Used
 <br><br>
 Language: JavaScript (Node.js)
+<br>
 Framework: Express.js
+<br>
 Database: MySQL
+<br>
 Tools: Postman, VS Code, Git, GitHub
+<br>
 Optional: HTML, CSS (for frontend where applicable)
