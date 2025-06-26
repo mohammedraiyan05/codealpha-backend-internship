@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask URL Shortener</title>
+    <style>
+        body { font-family: Arial; padding: 40px; text-align: center; }
+        input, button { padding: 10px; width: 300px; margin-top: 10px; }
+        .short-url { margin-top: 20px; font-size: 18px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>🔗 Flask URL Shortener</h2>
+    <form method="POST">
+        <input type="url" name="url" placeholder="Paste your long URL here" required>
+        <br>
+        <button type="submit">Shorten URL</button>
+    </form>
+
+    {% if short_url %}
+        <div class="short-url">
+            Short URL: <a href="{{ short_url }}" target="_blank">{{ short_url }}</a>
+        </div>
+    {% endif %}
+</body>
+</html>
